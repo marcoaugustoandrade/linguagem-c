@@ -65,24 +65,57 @@
 					<p></p>
 				</section>
 				<section>
-					<h2>Estrutura básica de um programa em linguagem C</h2>
-					<p></p>
-				</section>
-				<section>
 					<h2>Compilação</h2>
 					<p></p>
 				</section>	
 				<section>
+					<h2>Estrutura básica de um programa em linguagem C</h2>
+					<pre><code class="hljs c" data-trim contenteditable>
+	#include &#60;stdio.h&#62;
+
+	int main() {
+		// seu código
+		return 0;
+	}
+					</code></pre>
+				</section>
+				<section>
 					<h2>Variáveis</h2>
-					formatar float
-					,<table>
+					<ul class="left">
+						<li><b>Numéricos:</b> int, float, double</li>
+						<li><b>alfanumérico:</b> char</li>
+						<li>void</li>
+						<li>ponteiros</li>
+					</ul>
+					<div class="alert-yellow">Além dos tipos simples há tipos compostos como: arranjos, registros, enumerações e arquivos.</div>
+				</section>
+				<section>
+					<h2>Variáveis</h2>
+					<table>
 						<tr>
-							<th></th>
-							<th></th>
+							<th>Tipo</th>
+							<th>Espaço de memória</th>
+							<th>Números armazenados</th>
 						</tr>
 						<tr>
-							<td></td>
-							<td></td>
+							<td>int</td>
+							<td>4 bytes</td>
+							<td>-214783648 a 214783647</td>
+						</tr>
+						<tr>
+							<td>float</td>
+							<td>4 bytes</td>
+							<td>-3.4e38 a +3.4e38</td>
+						</tr>
+						<tr>
+							<td>double</td>
+							<td>8 bytes</td>
+							<td>-1.7e308 a +1.7e308</td>
+						</tr>
+						<tr>
+							<td>char</td>
+							<td>1 byte</td>
+							<td>caracteres do código ASCII</td>
 						</tr>
 					</table>
 				</section>
@@ -93,17 +126,23 @@
 	float salario;
 	char sexo;
 					</code></pre>
-				</section>		
+				</section>
 				<section>
 					<h2>Atribuição de valores</h2>
-					<p></p>
+					<pre><code class="hljs c" data-trim contenteditable>
+	idade = 18;
+	salario = 1080.50;
+	sexo = 'F';
+					</code></pre>
 				</section>
 				<section>
 					<h2>Constantes</h2>
-					<p></p>
+					<pre><code class="hljs c" data-trim contenteditable>
+	const MEDIA = 60;
+					</code></pre>
 				</section>
 				<section>
-					<h2>Operadores artiméticos</h2>
+					<h2>Operadores aritméticos</h2>
 					<table>
 						<tr>
 							<th>Operador</th>
@@ -215,7 +254,11 @@
 					<h2>Saída de dados</h2>
 					<pre><code class="hljs c" data-trim contenteditable>
 	printf("A idade do aluno é %d", idade);
+	printf("\nO salário do funcionário é de R$ %f", salario);
+	printf("\nO salário do funcionário é de R$ %6.2f", salario);
+	printf("\nO sexo informador é: %c", sexo);
 					</code></pre>
+					<div class="alert-blue">Você pode formatar um número com casas decimais!</div>
 				</section>			
 			</div>
 		</div>
